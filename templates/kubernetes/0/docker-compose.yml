@@ -76,6 +76,7 @@ kubernetes:
         - --cloud-provider=rancher
         - --allow_privileged=true
         - --admission-control=NamespaceLifecycle,LimitRanger,SecurityContextDeny,ResourceQuota
+        - --pod-infra-container-image=registry.cn-shenzhen.aliyuncs.com/gcrio/pause-amd64:3.0
     image: rancher/k8s:v1.2.4-rancher2
     links:
         - etcd
