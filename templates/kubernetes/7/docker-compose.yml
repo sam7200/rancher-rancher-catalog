@@ -14,6 +14,7 @@ kubelet:
         - --healthz-bind-address=0.0.0.0
         - --cluster-dns=169.254.169.250
         - --cluster-domain=cluster.local
+        - --pod-infra-container-image=registry.cn-shenzhen.aliyuncs.com/gcrio/pause-amd64:3.0
     image: rancher/k8s:v1.2.4-rancher9
     volumes:
         - /var/run/docker.sock:/var/run/docker.sock
